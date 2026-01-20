@@ -1,6 +1,8 @@
 import { AuthProvider, useAuth } from "@/lib/auth-context";
 import { Stack, useRouter, useSegments } from "expo-router";
 import { useEffect } from "react";
+import { PaperProvider } from "react-native-paper";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 // function to check if user is authenticated, if not AuthenticatorAssertionResponse, create accout apge must appear instead
 function RouteGuard({children}: {children: React.ReactNode}) {
@@ -24,14 +26,18 @@ function RouteGuard({children}: {children: React.ReactNode}) {
 export default function RootLayout() {
   return (
     <AuthProvider>
-      <RouteGuard>
-        <Stack>
-          <Stack.Screen 
-            name="(tabs)" 
-            options={{ headerShown: false }}
-          />
-        </Stack>
-      </RouteGuard>
+      <PaperProvider>
+        <SafeAreaProvider>
+          <RouteGuard>
+            <Stack>
+              <Stack.Screen 
+                name="(tabs)" 
+                options={{ headerShown: false }}
+              />
+            </Stack>
+          </RouteGuard>
+        </SafeAreaProvider>
+      </PaperProvider>
     </AuthProvider>
 
     // <Stack>
