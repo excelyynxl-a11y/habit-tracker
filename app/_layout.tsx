@@ -3,6 +3,7 @@ import { Stack, useRouter, useSegments } from "expo-router";
 import { useEffect } from "react";
 import { PaperProvider } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 // function to check if user is authenticated, if not AuthenticatorAssertionResponse, create accout apge must appear instead
 function RouteGuard({children}: {children: React.ReactNode}) {
@@ -25,20 +26,22 @@ function RouteGuard({children}: {children: React.ReactNode}) {
 
 export default function RootLayout() {
   return (
-    <AuthProvider>
-      <PaperProvider>
-        <SafeAreaProvider>
-          <RouteGuard>
-            <Stack>
-              <Stack.Screen 
-                name="(tabs)" 
-                options={{ headerShown: false }}
-              />
-            </Stack>
-          </RouteGuard>
-        </SafeAreaProvider>
-      </PaperProvider>
-    </AuthProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AuthProvider>
+        <PaperProvider>
+          <SafeAreaProvider>
+            <RouteGuard>
+              <Stack>
+                <Stack.Screen 
+                  name="(tabs)" 
+                  options={{ headerShown: false }}
+                />
+              </Stack>
+            </RouteGuard>
+          </SafeAreaProvider>
+        </PaperProvider>
+      </AuthProvider>
+    </GestureHandlerRootView>
 
     // <Stack>
     //   <Stack.Screen 
