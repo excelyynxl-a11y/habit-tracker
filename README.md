@@ -43,9 +43,9 @@ This app allows users to track daily progress, visualizes streaks and compete on
   <tr>
     <td><img src="assets/images/habit-tracker-login.png" width="150"/></td>
     <td><img src="assets/images/habit-tracker-habit-list.png" width="150"/></td>
-    <td><img src="assets/images/habit-tracker-streaks.png" width="40"/></td>
+    <td><img src="assets/images/habit-tracker-streaks.png" width="150"/></td>
     <td><img src="assets/images/habit-tracker-create-habit.png" width="150"/></td>
-    <td><img src="assets/images/habit-tracker-complete-habit.png" width="40"/></td>
+    <td><img src="assets/images/habit-tracker-complete-habit.png" width="150"/></td>
     <td><img src="assets/images/habit-tracker-delete-habit.png" width="150"/></td>
   </tr>
 </table>
