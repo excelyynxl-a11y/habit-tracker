@@ -31,15 +31,29 @@ This app allows users to track daily progress, visualizes streaks and compete on
 
 ## 📸 Screenshots
 
-| Login | Habit List | Streak Ranking | Create Habit | Complete Habit | Delete Habit |
-|------|-------|-------|-------| -------|--------|
-| ![Login](assets\images\habit-tracker-login.png) | ![Habits](assets/images/habit-tracker-habit-list.png) | ![Ranking](assets\images\habit-tracker-streaks.png) | ![Ranking](assets\images\habit-tracker-create-habit.png) | ![Complete](assets\images\habit-tracker-complete-habit.png) | ![Delete](assets\images\habit-tracker-delete-habit.png) |
-
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Habit List</th>
+    <th>Streak Ranking</th>
+    <th>Create Habit</th>
+    <th>Complete Habit</th>
+    <th>Delete Habit</th>
+  </tr>
+  <tr>
+    <td><img src="assets/images/habit-tracker-login.png" width="150"/></td>
+    <td><img src="assets/images/habit-tracker-habit-list.png" width="150"/></td>
+    <td><img src="assets/images/habit-tracker-streaks.png" width="40"/></td>
+    <td><img src="assets/images/habit-tracker-create-habit.png" width="150"/></td>
+    <td><img src="assets/images/habit-tracker-complete-habit.png" width="40"/></td>
+    <td><img src="assets/images/habit-tracker-delete-habit.png" width="150"/></td>
+  </tr>
+</table>
 ---
 
 ## 🎥 Demo Video
 
-[▶️ Watch Habit Tracker App Demo Video](assets\videos\habit-tracker-app-demo-video.webm)
+[▶️ Watch Habit Tracker App Demo Video](assets\videos\habit-tracker-app-demo-video.mp4)
 
 > GitHub does not auto-play videos, but clicking the link will download or play it.
 
