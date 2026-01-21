@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# 📅 Habit Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple and intuitive **Habit Tracker mobile application** built using **React Native**, **Expo** and **Appwrite**.
 
-## Get started
+This app allows users to track daily progress, visualizes streaks and compete on habit streak rankings.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+- 🔐 User authentication (Sign-up and login using email)
+- ➕ Create new habits
+- 👈 Swipe left to complete a habit
+- 👉 Swipe right to delete a habit
+- 🔥 Habit streak tracking
+- 🏆 Streak ranking leaderboard
+- ☁️ Backend powered by Appwrite
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🔨 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Frontend**: React Native (Expo)
+- **Backend**: Appwrite
+- **Authentication**: Appwrite Auth
+- **Database**: Appwrite Database
+- **Gesture Handling**: React Native Gesture Handler
+- **Deployment**: Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📸 Screenshots
 
-When you're ready, run:
+| Login | Habit List | Streak Ranking | Create Habit | Complete Habit | Delete Habit |
+|------|-------|-------|-------| -------|--------|
+| ![Login](assets\images\habit-tracker-login.png) | ![Habits](assets/images/habit-tracker-habit-list.png) | ![Ranking](assets\images\habit-tracker-streaks.png) | ![Ranking](assets\images\habit-tracker-create-habit.png) | ![Complete](assets\images\habit-tracker-complete-habit.png) | ![Delete](assets\images\habit-tracker-delete-habit.png) |
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎥 Demo Video
 
-## Learn more
+[▶️ Watch Habit Tracker App Demo Video](assets\videos\habit-tracker-app-demo-video.webm)
 
-To learn more about developing your project with Expo, look at the following resources:
+> GitHub does not auto-play videos, but clicking the link will download or play it.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
