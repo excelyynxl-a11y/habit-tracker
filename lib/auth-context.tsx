@@ -27,7 +27,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         try {
             const session = await account.get();
             setUser(session);
-        } catch (error) {
+        } catch (error: any) {
+            console.log("getUser() error json:", JSON.stringify(error));
             setUser(null);
         } finally {
             setIsLoadingUser(false);
@@ -58,8 +59,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             return null;
         } catch (error) {
             if (error instanceof Error) {
+                console.log("auth-context.tsx > signIn(): ", error.message);
                 return error.message;
             }
+            console.log("auth-context.tsx > signIn(): An error occurred when signing in.");
             return "An error occurred when signing in."
         }
     }
