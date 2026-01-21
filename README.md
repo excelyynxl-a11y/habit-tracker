@@ -44,4 +44,6 @@ This app allows users to track daily progress, visualizes streaks and compete on
 > GitHub does not auto-play videos, but clicking the link will download or play it.
 
 ---
+## 🚀 Live deployment on Expo
+[Coming soon](#insert link later)
 
